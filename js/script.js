@@ -21,7 +21,7 @@ var swiper = new Swiper(".home-slider", {
    },
 });
 
-var swiper = new Swiper(".food-slider", {
+var swiper = new Swiper(".models-slider", {
    grabCursor:true,
    loop:true,
    centeredSlides:true,
@@ -43,13 +43,13 @@ var swiper = new Swiper(".food-slider", {
    },
 });
 
-let previewContainer = document.querySelector('.food-preview-container');
-let previewBox = previewContainer.querySelectorAll('.food-preview');
+let previewContainer = document.querySelector('.models-preview-container');
+let previewBox = previewContainer.querySelectorAll('.models-preview');
 
-document.querySelectorAll('.food .slide').forEach(food =>{
-   food.onclick = () =>{
+document.querySelectorAll('.models .slide').forEach(models =>{
+   models.onclick = () =>{
       previewContainer.style.display = 'flex';
-      let name = food.getAttribute('data-name');
+      let name = models.getAttribute('data-name');
       previewBox.forEach(preveiw =>{
          let target = preveiw.getAttribute('data-target');
          if(name == target){
